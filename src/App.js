@@ -9,17 +9,17 @@ export default function App() {
     return(
         <>
             <Navbar />
-            <div class="corpo">
-                <div class="esquerda">
+            <div className="corpo">
+                <div className="esquerda">
                     <Stories />
                     <Posts />
                 </div>
-                <div class="sidebar">
+                <div className="sidebar">
                     <Usuario />
                     <Sugestoes />
                 </div>
             </div>
-            <div class="fundo-mobile">
+            <div className="fundo-mobile">
                 <ion-icon name="home"></ion-icon>
                 <ion-icon name="search-outline"></ion-icon>
                 <ion-icon name="add-circle-outline"></ion-icon>
