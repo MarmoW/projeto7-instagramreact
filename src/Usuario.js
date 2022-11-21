@@ -17,12 +17,12 @@ export default function Usuario(){
   function User(props) {
     return (
       <>
-        <img onClick={MudarFoto} src={pfp ? pfp : "assets/img/catanacomics.svg"}/>
+        <img onClick={MudarFoto} src={pfp ? pfp : "assets/img/catanacomics.svg"} data-test="profile-image"/>
         <div className="texto">
               <strong>{props.user}</strong>
-              <span>
+              <span data-test="name">
               {nome ? nome : "Catana"}
-              <ion-icon name="pencil" onClick={MudarNome}></ion-icon>
+              <ion-icon name="pencil" onClick={MudarNome} data-test="edit-name"></ion-icon>
           </span>
         </div>
       </>
@@ -30,7 +30,7 @@ export default function Usuario(){
     );
   }
   return(
-        <div className="usuario">
+        <div className="usuario" data-test="user">
           {Username.map((userinfo) => <User user={userinfo.user} nome={userinfo.nome} pfp={userinfo.pfp}/>)}
         </div>
   );

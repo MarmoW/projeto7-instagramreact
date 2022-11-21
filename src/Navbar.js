@@ -1,5 +1,5 @@
 export default function Navbar() {
-    console.log("its running");
+   
     return(
     <div className="navbar">
       <div className="container">
